@@ -3,150 +3,320 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Abhijeet Raskar - Master's of Computer Application Student & Aspiring Software Developer Portfolio">
     <title>Abhijeet Raskar | Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-
-    <header>
-        <h1>Abhijeet Raskar</h1>
-        <p>Master's of Computer Application Student | Aspiring Software Developer</p>
+    
+    <header class="navbar-header">
+        <nav class="navbar container">
+            <a href="#hero" class="nav-logo">Abhijeet<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact" class="nav-btn">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <hr>
+    <main>
+        <section id="hero" class="hero-section container">
+            <div class="hero-content">
+                <div class="badge">
+                    <span class="badge-dot"></span> Open to Opportunities
+                </div>
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Abhijeet Raskar</span></h1>
+                <p class="hero-subtitle">Master's of Computer Application Student &amp; Aspiring Software Developer</p>
+                <p class="hero-desc">
+                    Passionate about building practical software, crafting modern web applications, and constantly exploring emerging technologies. Based in Pune, India.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fa-solid fa-briefcase"></i> View Projects
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fa-regular fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/ARisCrazy/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/a-raskar" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:abhijeetraskar2005@gmail.com" aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="profile-frame">
+                    <img src="profile.jpg" alt="Abhijeet Raskar" class="profile-img">
+                </div>
+            </div>
+        </section>
 
-    <section id="photo">
-        <h2>My Photo</h2>
+        <section id="about" class="section container">
+            <div class="section-header">
+                <span class="section-tag">Introduction</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-card main-bio">
+                    <p>
+                        Hello! I am <strong>Abhijeet Raskar</strong>, a Computer Application student from Pune. I am deeply interested in software development, web engineering, and learning modern tech stacks.
+                    </p>
+                    <p>
+                        I enjoy building end-to-end projects and refining my programming skills by solving real-world challenges. From interactive web applications and Android apps to experimenting with game mechanics and AR, I thrive on continuous hands-on learning.
+                    </p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <h4>Education</h4>
+                            <p>Master's of Computer Application (MCA)</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Pune, Maharashtra, India</p>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <div>
+                            <h4>Focus Areas</h4>
+                            <p>Software Engineering &amp; Web Development</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <img src="profile.jpg" alt="Abhijeet Raskar" width="200">
-    </section>
+        <section id="projects" class="section container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">A collection of academic, personal, and experimental projects I've built.</p>
+            </div>
 
-    <hr>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-card-header">
+                        <div class="project-icon-box">
+                            <i class="fa-solid fa-network-wired"></i>
+                        </div>
+                        <span class="status-pill status-wip">In Development</span>
+                    </div>
+                    <h3 class="project-title">Raah Connect</h3>
+                    <p class="project-desc">
+                        An ongoing community connectivity and networking platform designed to streamline collaborative workflows.
+                    </p>
+                    <div class="project-tags">
+                        <span>Web Platform</span>
+                        <span>Full Stack</span>
+                        <span>Work in Progress</span>
+                    </div>
+                </article>
 
-    <section id="about">
-        <h2>About Me</h2>
+                <article class="project-card">
+                    <div class="project-card-header">
+                        <div class="project-icon-box">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <span class="status-pill">Mobile App</span>
+                    </div>
+                    <h3 class="project-title">Image Classifier</h3>
+                    <p class="project-desc">
+                        An Android mobile application leveraging TensorFlow Lite and SQLite to classify captured images in real time with offline inference.
+                    </p>
+                    <div class="project-tags">
+                        <span>Android</span>
+                        <span>Java</span>
+                        <span>TensorFlow Lite</span>
+                        <span>SQLite</span>
+                    </div>
+                </article>
 
-        <p>
-            Hello! I am Abhijeet Raskar, a Computer Application student
-            from Pune. I am interested in software development, web
-            development and learning new technologies.
-        </p>
+                <article class="project-card">
+                    <div class="project-card-header">
+                        <div class="project-icon-box">
+                            <i class="fa-solid fa-gamepad"></i>
+                        </div>
+                        <span class="status-pill">Game Dev</span>
+                    </div>
+                    <h3 class="project-title">Dark Ages</h3>
+                    <p class="project-desc">
+                        A single-player action RPG project focused on atmospheric level design, immersive environment storytelling, and spatial navigation.
+                    </p>
+                    <div class="project-tags">
+                        <span>Game Design</span>
+                        <span>RPG Mechanics</span>
+                        <span>Level Design</span>
+                    </div>
+                </article>
 
-        <p>
-            I enjoy building projects and improving my programming skills
-            by working on real-world applications.
-        </p>
-    </section>
+                <article class="project-card">
+                    <div class="project-card-header">
+                        <div class="project-icon-box">
+                            <i class="fa-solid fa-desktop"></i>
+                        </div>
+                        <span class="status-pill">Web App</span>
+                    </div>
+                    <h3 class="project-title">BuildMaster</h3>
+                    <p class="project-desc">
+                        A comprehensive PC building web platform featuring customized cart configurations, compatibility checks, and complete user &amp; admin portals.
+                    </p>
+                    <div class="project-tags">
+                        <span>Web Development</span>
+                        <span>PHP / MySQL</span>
+                        <span>E-Commerce</span>
+                    </div>
+                </article>
 
-    <hr>
+                <article class="project-card">
+                    <div class="project-card-header">
+                        <div class="project-icon-box">
+                            <i class="fa-solid fa-vr-cardboard"></i>
+                        </div>
+                        <span class="status-pill">Augmented Reality</span>
+                    </div>
+                    <h3 class="project-title">WebAR Watch Showcase</h3>
+                    <p class="project-desc">
+                        A frictionless browser-based augmented reality experience that renders interactive, 3D watch models using image tracking without native apps.
+                    </p>
+                    <div class="project-tags">
+                        <span>WebAR</span>
+                        <span>JavaScript</span>
+                        <span>3D Models</span>
+                        <span>Image Tracking</span>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
+        <section id="skills" class="section container">
+            <div class="section-header">
+                <span class="section-tag">Expertise</span>
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">Technologies, languages, and developer tools I work with.</p>
+            </div>
 
-        <div class="project">
-            <h3>Raah Connect</h3>
-            <p>
-                An ongoing project currently under development.
-            </p>
-        </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="skill-chip"><i class="fa-brands fa-java"></i> Java</span>
+                        <span class="skill-chip"><i class="fa-brands fa-python"></i> Python</span>
+                        <span class="skill-chip"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <span class="skill-chip"><i class="fa-brands fa-php"></i> PHP</span>
+                        <span class="skill-chip"><i class="fa-solid fa-c"></i> C++</span>
+                    </div>
+                </div>
 
-        <div class="project">
-            <h3>Image Classifier</h3>
-            <p>
-                An Android application using Java, TensorFlow Lite and
-                SQLite to classify images in real time.
-            </p>
-        </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <h3>Web Technologies</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="skill-chip"><i class="fa-brands fa-html5"></i> HTML5</span>
+                        <span class="skill-chip"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+                        <span class="skill-chip"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+                    </div>
+                </div>
 
-        <div class="project">
-            <h3>Dark Ages</h3>
-            <p>
-                A single-player action RPG project focused on level design,
-                immersive environments and navigation.
-            </p>
-        </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fa-solid fa-database"></i>
+                        <h3>Databases &amp; Tools</h3>
+                    </div>
+                    <div class="skill-chips">
+                        <span class="skill-chip"><i class="fa-solid fa-database"></i> MySQL</span>
+                        <span class="skill-chip"><i class="fa-solid fa-server"></i> SQLite</span>
+                        <span class="skill-chip"><i class="fa-brands fa-git-alt"></i> Git</span>
+                        <span class="skill-chip"><i class="fa-brands fa-android"></i> Android Studio</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <div class="project">
-            <h3>BuildMaster</h3>
-            <p>
-                A full-stack PC building web platform with custom carts,
-                user features and admin features.
-            </p>
-        </div>
+        <section id="contact" class="section container">
+            <div class="contact-card">
+                <div class="contact-header">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p class="contact-subtitle">
+                        Feel free to reach out for opportunities, collaborations, or just a tech conversation!
+                    </p>
+                </div>
 
-        <div class="project">
-            <h3>WebAR Watch Showcase</h3>
-            <p>
-                A browser-based AR project that displays interactive
-                3D watch models using image tracking.
-            </p>
-        </div>
-    </section>
+                <div class="contact-grid">
+                    <a href="mailto:abhijeetraskar2005@gmail.com" class="contact-tile">
+                        <div class="contact-tile-icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="contact-tile-content">
+                            <span class="tile-label">Email</span>
+                            <span class="tile-value">abhijeetraskar2005@gmail.com</span>
+                        </div>
+                    </a>
 
-    <hr>
+                    <div class="contact-tile">
+                        <div class="contact-tile-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="contact-tile-content">
+                            <span class="tile-label">Location</span>
+                            <span class="tile-value">Pune, Maharashtra, India</span>
+                        </div>
+                    </div>
+                </div>
 
-    <section id="skills">
-        <h2>Skills</h2>
-
-        <ul>
-            <li>Java</li>
-            <li>Python</li>
-            <li>JavaScript</li>
-            <li>PHP</li>
-            <li>C++</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Bootstrap</li>
-            <li>MySQL</li>
-            <li>SQLite</li>
-            <li>Git</li>
-            <li>Android Studio</li>
-        </ul>
-    </section>
-
-    <hr>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-
-        <p>
-            <strong>Email:</strong>
-            <a href="mailto:abhijeetraskar2005@gmail.com">
-                abhijeetraskar2005@gmail.com
-            </a>
-        </p>
-
-        <p>
-            <strong>Location:</strong>
-            Pune, Maharashtra, India
-        </p>
-    </section>
-
-    <hr>
-
-    <section id="links">
-        <h2>My Links</h2>
-
-        <p>
-            <a href="https://www.linkedin.com/in/a-raskar" target="_blank">
-                LinkedIn
-            </a>
-        </p>
-
-        <p>
-            <a href="https://github.com/ARisCrazy/" target="_blank">
-                GitHub
-            </a>
-        </p>
-
-        
-    </section>
-
-    <hr>
-
+                <div class="contact-social-bar">
+                    <span class="social-bar-text">Find me on:</span>
+                    <div class="social-links-row">
+                        <a href="https://www.linkedin.com/in/a-raskar" target="_blank" rel="noopener noreferrer" class="social-btn">
+                            <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/ARisCrazy/" target="_blank" rel="noopener noreferrer" class="social-btn">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
 </body>
 </html>
